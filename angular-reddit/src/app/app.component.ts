@@ -10,8 +10,7 @@ export class AppComponent {
 
      let t = title.value;
     let v= link.value;
-    console.log(`Adding article title: `+t+ ` and link: `+ v);
-    console.log(`Adding article title: `+title.value+ ` and link: `+ link.value);
+
     console.log(`Adding article title: ${title.value} and link: ${link.value}`);
     return false;
 
