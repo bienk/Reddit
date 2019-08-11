@@ -4,7 +4,7 @@
       <h3 class="display-4">Add a Link</h3>
       <div class="form-group">
         <label for="title">Title:</label>
-        <input name="title" #newtitle >
+        <input name="title" #newtitle class="form-control">
       </div>
       <div class="form-group">
         <label for="link">Link:</label>
@@ -14,6 +14,12 @@
       Submit link
     </button>
   </form>
-  <app-article></app-article>
 </div>
 
+<div class="container">
+  <!-- start adding here -->
+  <app-article
+    *ngFor="let art of articles" [article]="art">
+  </app-article>
+  <!-- end adding here -->
+</div>
